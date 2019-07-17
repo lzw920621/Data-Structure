@@ -21,7 +21,7 @@ namespace _001.线性表
             get { return next; }
             set { next = value; }
         }
-        public Node()
+        public Node()//构造函数
         {
             data = default(T);
             next = null;

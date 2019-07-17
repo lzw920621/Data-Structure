@@ -8,7 +8,7 @@ namespace _001.线性表
 {
     interface IListDS<T>
     {
-        int GetLength();
+        int GetLength();//获取长度
         void Clear();
         bool IsEmpty();
         void Add(T item);

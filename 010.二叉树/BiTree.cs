@@ -173,5 +173,24 @@ namespace _010.二叉树
                 }
             }
         }
+
+        public int GetTreeHeight()//树的高度
+        {
+            return GetHeight(head);
+        }
+        private int GetHeight(Node<T> node)
+        {
+            if(node==null)
+            {
+                return 0;
+            }
+            else
+            {
+                int leftHeight = GetHeight(node.LChild);
+                int rightHeight = GetHeight(node.RChild);
+                return leftHeight > rightHeight ? leftHeight + 1 : rightHeight + 1;
+            }
+        }
+
     }
 }

@@ -135,9 +135,9 @@ namespace _010.二叉树
             {
                 return;
             }
-            PreOrder(root.LChild);//遍历左子树
+            InOrder(root.LChild);//遍历左子树
             Console.WriteLine(root.Data);//处理根节点
-            PreOrder(root.RChild);//遍历右子树
+            InOrder(root.RChild);//遍历右子树
         }
         //后序遍历（LRD）
         public void PostOrder(Node<T> root)
@@ -146,8 +146,8 @@ namespace _010.二叉树
             {
                 return;
             }
-            PreOrder(root.RChild);//遍历右子树
-            PreOrder(root.LChild);//遍历左子树
+            PostOrder(root.RChild);//遍历右子树
+            PostOrder(root.LChild);//遍历左子树
             Console.WriteLine(root.Data);//处理根节点            
         }
         //层序遍历（Level Order）

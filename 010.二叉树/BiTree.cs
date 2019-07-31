@@ -146,8 +146,8 @@ namespace _010.二叉树
             {
                 return;
             }
-            PostOrder(root.RChild);//遍历右子树
             PostOrder(root.LChild);//遍历左子树
+            PostOrder(root.RChild);//遍历右子树            
             Console.WriteLine(root.Data);//处理根节点            
         }
         //层序遍历（Level Order）
